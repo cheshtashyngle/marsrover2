@@ -17,6 +17,7 @@
             <test name = "com.marsrover.ViewTest" />
             <test name = "com.marsrover.ParserTest" />
             <test name = "com.marsrover.WestTest" />
+            <test name = "com.marsrover.NorthTest" />
             <classpath>
                 <pathelement location="out" />
                 <path refid="classpath" />
