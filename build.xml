@@ -13,7 +13,7 @@
 
     <target name="runjunit" depends="compile" >
         <junit haltonfailure="true" printsummary="true" showoutput="yes" >
-            <test name = "com.marsrover.RoverTest" />
+            <test name = "com.marsrover.EastTest" />
             <test name = "com.marsrover.ViewTest" />
             <test name = "com.marsrover.ParserTest" />
             <classpath>
