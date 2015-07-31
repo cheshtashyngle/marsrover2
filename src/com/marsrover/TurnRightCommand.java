@@ -1,6 +1,6 @@
 package com.marsrover;
 
-public class TurnLeftCommand implements Command{
+public class TurnRightCommand implements Command{
 
     @Override
     public void execute() {

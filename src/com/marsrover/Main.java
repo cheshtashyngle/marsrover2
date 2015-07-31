@@ -16,7 +16,7 @@ public class Main {
         char direction = inputs[2].charAt(0);
         new Rover(xCoordinate, yCoordinate, direction);
         input = view.input();
-        for(int i = 0;i < inputs.length;i++) {
+        for(int i = 0;i < input.length();i++) {
             char command = input.charAt(i);
         }
     }

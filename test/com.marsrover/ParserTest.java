@@ -11,6 +11,13 @@ public class ParserTest {
     public void shouldParseLIntoTurnLeftCommand() {
         Parser parser = new Parser();
 
-        assertEquals(TurnLeftCommand.class, parser.parseCommand("L").getClass());
+        assertEquals(TurnLeftCommand.class, parser.parseCommand('L').getClass());
+    }
+
+    @Test
+    public void shouldParseRIntoTurnRightCommand() {
+        Parser parser = new Parser();
+
+        assertEquals(TurnRightCommand.class, parser.parseCommand('R').getClass());
     }
 }

@@ -2,7 +2,10 @@ package com.marsrover;
 
 public class Parser {
 
-    public TurnLeftCommand parseCommand(String command) {
-        return new TurnLeftCommand();
+    public Command parseCommand(char command) {
+        if(command == 'L')
+            return new TurnLeftCommand();
+        else
+            return new TurnRightCommand();
     }
 }
