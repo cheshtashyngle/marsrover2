@@ -4,7 +4,7 @@ public class West implements Direction {
 
     @Override
     public Direction right() {
-        return null;
+        return new North();
     }
 
     @Override
