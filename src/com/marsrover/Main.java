@@ -6,8 +6,14 @@ public class Main {
         View view = new View();
         String input = view.input();
         String[] inputs = input.split(" ");
+        int upperXCoordinate = Integer.parseInt(inputs[0]);
+        int upperYCoordinate = Integer.parseInt(inputs[1]);
+        int[] plateau = {upperXCoordinate, upperYCoordinate};
+        input = view.input();
+        inputs = input.split(" ");
         int xCoordinate = Integer.parseInt(inputs[0]);
         int yCoordinate = Integer.parseInt(inputs[1]);
-        int[] plateau = {xCoordinate, yCoordinate};
+        char direction = inputs[2].charAt(0);
+        new Rover(xCoordinate, yCoordinate, direction);
     }
 }
