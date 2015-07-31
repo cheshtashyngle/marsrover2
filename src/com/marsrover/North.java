@@ -9,6 +9,6 @@ public class North implements Direction {
 
     @Override
     public Direction left() {
-        return null;
+        return new West();
     }
 }

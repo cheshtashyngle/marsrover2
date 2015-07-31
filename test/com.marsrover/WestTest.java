@@ -7,14 +7,14 @@ import static org.junit.Assert.assertEquals;
 public class WestTest {
 
     @Test
-    public void rightShouldReturnSouth() {
+    public void rightShouldReturnNorth() {
         West west = new West();
 
         assertEquals(North.class, west.right().getClass());
     }
 
     @Test
-    public void leftShouldReturnNorth() {
+    public void leftShouldReturnSouth() {
         West west = new West();
 
         assertEquals(South.class, west.left().getClass());
