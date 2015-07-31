@@ -13,11 +13,28 @@
 
     <target name="runjunit" depends="compile" >
         <junit haltonfailure="true" printsummary="true" showoutput="yes" >
-            <test name="com.marsrover.RoverTest" />
+            <test name = "com.marsrover.RoverTest" />
+            <test name = "com.marsrover.ViewTest" />
             <classpath>
                 <pathelement location="out" />
                 <path refid="classpath" />
             </classpath>
         </junit>
+    </target>
+    <target name ="createjar" depends="runjunit">
+        <jar destfile="lib/marsrover.jar"
+             basedir="out"
+             excludes="**/Test.class"
+                />
+    </target>
+
+    <target name="run" depends="runjunit">
+        <java classname="com.marsrover.Main">
+            <arg value="-h"/>
+            <classpath>
+                <pathelement location="lib/marsrover.jar"/>
+                <pathelement path="${java.class.path}"/>
+            </classpath>
+        </java>
     </target>
 </project>
