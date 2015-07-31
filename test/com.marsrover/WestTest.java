@@ -13,4 +13,11 @@ public class WestTest {
         assertEquals(North.class, west.right().getClass());
     }
 
+    @Test
+    public void leftShouldReturnNorth() {
+        West west = new West();
+
+        assertEquals(South.class, west.left().getClass());
+    }
+
 }
