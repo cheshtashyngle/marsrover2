@@ -16,9 +16,8 @@ public class Main {
         char direction = inputs[2].charAt(0);
         new Rover(xCoordinate, yCoordinate, direction);
         input = view.input();
-        inputs = input.split(" ");
         for(int i = 0;i < inputs.length;i++) {
-            String command = inputs[i];
+            char command = input.charAt(i);
         }
     }
 }
